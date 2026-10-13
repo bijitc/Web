@@ -1,0 +1,37 @@
+<html>
+
+<head>
+<script language="JavaScript">
+function clickme(){
+alert("registration successful");
+}
+</script>
+</head>
+
+<body>
+    <form>
+        <!-- Field 1: Name -->
+       
+            <label style="color:blue">Name:</label> <br>
+            <input type="text" placeholder="Enter name" maxlength="10"> <br>   
+
+       
+            <label style="color:blue">Email:</label><br>
+            <input type="email" placeholder="Enter email"><br><br>
+       
+        <!-- Radio Buttons -->
+       
+            <label style="color:blue">Account Type:</label><br>
+
+            <input type="radio" id="personal" name="type" checked>
+            <label for="personal" style="margin-right: 15px;">Personal</label>  <br>          
+            <input type="radio" id="business" name="type">
+            <label for="business">Business</label><br> <br>      
+
+       
+        <button type="submit" onclick = "clickme()">
+            Submit
+        </button>
+    </form>
+</body>
+</html>
