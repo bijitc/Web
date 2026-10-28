@@ -4,15 +4,25 @@
 </head>
 <body>
 <button onclick="myfunction(5)">Execute JS function</button>
+<!--<button onclick="mult(5, 8)">Multiply</button>-->
 
 <script>
 function myfunction(x, y)
 {
+    //default y to value 2
     if (y=== undefined) {
     y = 2;
     }
     document.write(x*y);
 }
+/*
+function mult(x, y)
+{    
+    result = x * y;
+    document.write("<br>" + result);
+}
+*/
+
 </script>
 </body>
 </html>
