@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>JavaScript Variables</h1>
+<p>Sum of two Numbers</p>
+<p id="result_add"></p>
+<p>Difference of two Numbers</p>
+<p id="result_subtract"></p>
+<p>Multiply two Numbers</p>
+<p id="result_multiply"></p>
+<p>Divide two Numbers</p>
+<p id="result_divide"></p>
+
+<script>
+    // Variables
+    var num1 = 10; // Statement 1
+    var num2 = 5; // Statement 2
+    // Operators: here operator "+" is used to add two numbers
+    var sum = num1 + num2; // Statement 3 
+    var diff = num1 - num2;
+    var product = num1 * num2;
+    var quotient = num1 / num2;
+
+    //script updates the content of the paragraph
+    document.getElementById("result_add").innerHTML = "The total sum is: " + sum;
+    document.getElementById("result_subtract").innerHTML = "The difference is: " + diff;
+    document.getElementById("result_multiply").innerHTML = "The product is: " + product;
+    document.getElementById("result_divide").innerHTML = "The quotient is: " + quotient; 
+
+</script>
+
+</body>
+
+</html>
