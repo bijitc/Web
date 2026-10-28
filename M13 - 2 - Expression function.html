@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Function Declaration</title>
+</head>
+
+<body>
+    <h1>Calculations using Functions</h1>
+    <script>
+    // Function as a variable
+    // return product
+    var func = function mult (a, b) {
+        return a * b;
+    };
+    var result = func;
+    document.write("Product is: " + result(5, 8));
+    
+    // Expression Function
+    // return sum
+    var result = function (a, b) {return a + b;};
+    
+    document.write("<br> Sum from expression function is: " + result(5, 8));
+    </script>
+</body>
+
+</html>
