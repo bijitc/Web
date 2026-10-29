@@ -3,8 +3,11 @@
 <body>
 
 <h1>JavaScript Variables</h1>
+
 <p>Sum of two Numbers</p>
+
 <p id="result"></p>
+<p id="result2"></p>
 
 <script>
     // Variables
@@ -12,11 +15,15 @@
     var num2 = 6; // Statement 2
     // Operators: here operator "+" is used to add two numbers
     var sum = num1 + num2; // Statement 3 
-
+    var prod = num1*num2;
+   
     //script updates the content of the paragraph
     document.getElementById("result").innerHTML = "The total sum is: " + sum;
+    document.getElementById("result2").innerHTML = "The product is: " + prod;
 
+   
 </script>
+
 
 </body>
 
