@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>JS Object Example</title>
+</head>
+<body>
+  <script>
+    // Class function
+    class User{
+        constructor(name,role){
+            this.name = name;
+            this.role = role;
+        }
+        greet(){
+        return "Hello, I'm " + this.name + " and I work as a " + this.role + ".";
+      }
+    }
+
+    // Object
+    var user = new User("Riya", "Developer");
+    document.write(user.greet());
+  </script>
+
+</body>
+</html>
