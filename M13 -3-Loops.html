@@ -1,22 +1,17 @@
 <!DOCTYPE html>
 <html>
-<body>
-<h2>JavaScript For Loop</h2>
-<p id="demo"></p>
-<script>
-    
-    //Input data
-    var fruits = ["Apple", "Mango", "Grapes","Watermelon", "Jack Fruit", "Banana"];
-    //Initialize the output
-    var text = "Available fruits are : <br>";
-    //Initialize Counter
-    var i;
-    
-    //Extract the text from the list
-    for (i = 0; i < fruits.length; i++) {
-        text += fruits[i] + "<br>";
-    }
-    document.getElementById("demo").innerHTML = text;
-</script>
-</body>
+    <body>
+        <h2>Available fruits:</h2>
+        <script>    
+            //List
+            var fruits = ["Apple", "Mango", "Grapes","Watermelon", "Jack Fruit", "Banana"];             
+
+            //Counter: number of repetitions
+            var i;   
+            //Loop : initialize counter, check, increment
+            for (i = 0; i < fruits.length; i++) { // fruits index: 0 to 5
+                document.write(fruits[i] + "<br>"); // text = "Apple <br> Mango <br> ..."
+            }
+        </script>
+    </body>
 </html>

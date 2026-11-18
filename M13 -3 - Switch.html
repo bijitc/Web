@@ -1,12 +1,10 @@
 <!DOCTYPE html>
 <html>
     <body>
-    <p id="demo"></p>
-
         <script>
-            var day;
+            var day = new Date().getDay();
 
-            switch (new Date().getDay()) {
+            switch (day) {
                 case 0:
                 day = "Sunday";
                 break;
@@ -28,7 +26,7 @@
                 case 6:
                 day = "Saturday";
             }
-            document.getElementById("demo").innerHTML = "Today is " + day;
+            document.write(day);
         </script>
     </body>
 </html>
