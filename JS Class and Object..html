@@ -8,12 +8,13 @@
   <script>
     // Class function
     class User{
+        company = "Google";
         constructor(name,role){
             this.name = name;
             this.role = role;
         }
         greet(){
-        return "Hello, I'm " + this.name + " and I work as a " + this.role + ".";
+        return "Hello, I'm " + this.name + " and I work as a " + this.role + " for " + this.company + ".";
       }
     }
 
