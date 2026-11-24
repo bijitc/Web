@@ -57,15 +57,17 @@
       city:   "Mumbai"
     };
 
-    // Step 2 — Dot notation
+
     var nameEl  = document.getElementById("name");
     var phoneEl = document.getElementById("phone");
+    var schoolEl = document.getElementById("school");
+    var cityEl   = document.getElementById("city");
+
+    // Step 2 — Dot notation
     nameEl.textContent  = myContact.name;
     phoneEl.textContent = myContact.phone;
 
     // Step 3 — Bracket notation
-    var schoolEl = document.getElementById("school");
-    var cityEl   = document.getElementById("city");
     schoolEl.textContent = myContact["school"];
     cityEl.textContent   = myContact["city"]; 
 

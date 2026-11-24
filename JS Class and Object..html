@@ -8,19 +8,27 @@
   <script>
     // Class function
     class User{
-        company = "Google";
+        company;
         constructor(name,role){
             this.name = name;
             this.role = role;
         }
-        greet(){
-        return "Hello, I'm " + this.name + " and I work as a " + this.role + " for " + this.company + ".";
+        getCompany(){
+          return this.company;
+        }
+        setCompany(comp){
+          this.company = comp;
+        }
+        greet(company_name){
+          return "Hello, I'm " + this.name + " and I work as a " + this.role + " for " + company_name + ".";
       }
     }
 
     // Object
     var user = new User("Riya", "Developer");
-    document.write(user.greet());
+    user.setCompany("Google");
+    company_name = user.getCompany(this.company);
+    document.write(user.greet(company_name));
   </script>
 
 </body>
